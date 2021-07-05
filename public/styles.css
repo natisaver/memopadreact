@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/* create form div */
+
+@-webkit-keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+}
+  
+@keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+}
+
+.createform {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.createform h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #9ae6b4;
+    font-size: large;
+    font-weight: 50;
+}
+
+.createform input {
+    border-style: none;
+    background: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
+/* title section of create.js component */
+
+  .webflow-style-input2 {
+    background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 2px;
+    padding: 0.7rem 1rem 0.8rem;
+    background: rgba(57, 63, 84, 0.8);
+    
+  }
+
+  .webflow-style-input2 input {
+    color: #bfd2ff;
+    line-height: 1.2rem;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    font-family: 'Inconsolata', monospace;
+  }
+  .webflow-style-input2 input::-webkit-input-placeholder {
+    color: #7881a1;
+    font-family: 'Inconsolata', monospace;
+  }
+
+  /* main content of create.js component */
+.webflowtextarea{
+    border: none;
+    /* resize: none; */
+    background: none;
+    outline: none;
+}
+
+  .webflow-style-input {
+    background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 2px;
+    padding: 0.7rem 1rem 0.8rem;
+    background: rgba(57, 63, 84, 0.8);
+  }
+/* rainbow line thingy */
+  .webflow-style-input:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #b294ff, #57e6e6, #feffb8, #57e6e6, #b294ff, #57e6e6);
+    background-size: 500% auto;
+    -webkit-animation: gradient 3s linear infinite;
+            animation: gradient 3s linear infinite;
+  }
+  
+  .webflow-style-input textarea {
+    flex-grow: 1;
+    color: #bfd2ff;
+    line-height: 2rem;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+  .webflow-style-input textarea::-webkit-input-placeholder {
+    color: #7881a1;
+    font-family: 'Inconsolata', monospace;
+  }
+  
+  .webflow-style-input button {
+    color: #7881A1;
+    font-size: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    transition: color 0.25s;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+
+
+  }
+  .webflow-style-input button:hover {
+    animation: bgColor 2s infinite linear;
+    color: #73b68a;
+    cursor: pointer;
+  }
+
+
+  
+  .active input {
+    width: 100%;
+    padding-left: 25px;
+    border-radius: 36px;
+  }
+/*  */
+
+
+.btmfooter {
+    margin-top: 50px;
+    padding-right: 10px;
+    height: 2em;
+    position: relative;
+
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+}
+
+.navitems {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    /* packs the items together to the end */
+    justify-content: end;
+    /* this helps shift it the right */
+    width: 90vw;
+}
+
+.navlist {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.App {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow: visible;
+    
+}
+
+:root {
+    --highlight-color: null;
+  }
+
+::selection {
+    background: var(--highlight-color);
+  }
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #2d3748;
+    background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+    margin:0px;
+}
+
+titles{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inconsolata', monospace;
+}
+
+.navbar a {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.navbar {
+
+    /* background-image: linear-gradient(to bottom,#f0d852, #fca1a1, rgb(235, 153, 255)); */
+    background: #292a2c;
+    /* margin just shifts the whole header around, top/bottom then LR, if 3 is top, LR, bottom*/
+    height: 80px;
+    margin: 0 0 20px; 
+    /* padding includes the background colour */
+    padding: 20px 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex !important;
+    /* center vertically */
+    align-items: center;
+    /* if u want to center horizontally, justify-content: center; */
+}
+
+
+
+header h1 {
+    animation: bgColor 8s infinite linear;
+    font-family: 'Montserrat', sans-serif;
+    color: #73b68a;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* HIGHLIGHTING THE TEXT ANIMATION STUFF */
+
+header .lily {
+    animation: bgColor 8s infinite linear;
+    color: #73b68a;
+    padding-right: 9px;
+    height: 28px;
+    width: 28px;
+}
+
+.gitty {
+    color: white;
+    margin-top:2px;
+
+}
+
+@keyframes bgColor {
+    20% {
+        color: #73b68a;
+    }
+    56% {
+        color: rgb(199, 76, 101);
+    }
+    80% {
+        color: rgb(97, 130, 179);
+    }
+    90% {
+        color: blueviolet;
+    }
+    100% {
+        color: #73b68a;
+    }
+}
+
+.animate {
+    /* animations */
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+/* yellow highlight */
+.v1 {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(#f6e05e, #f6e05e);
+  }
+
+.v1:hover {
+    background-size: 100% 100%;
+    color: #252736;
+  }
+
+/* yellow green highlight */
+.v2 {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #f6e05e, #9ae6b4);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+.v2:hover {
+    background-size: 100% 100%;
+  }
+
+footer {
+    font-family: 'Inconsolata', monospace;
+    color: #abb9d1;
+    font-size: 18px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    /* to make it a footer */
+    bottom: 10px;
+}
+
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px 10px 10px 0;
+    width: 25vw;
+    margin: 16px;
+    display: flex;
+    position: relative;
+    flex-direction: inline;
+    border-left: 5px solid;
+    border-image: 
+    linear-gradient(to bottom, #729dd6, #bc74d8) 1 100%;
+}
+
+.note h2{
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.note p {
+    font-family: 'Inconsolata', monospace;
+}
+
+.vertright {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.inlinz {
+    margin-bottom: 5px;
+}
+.inlinz h2 {
+    display: inline;
+    margin-left: 10px;
+}
+
+footer h5 {
+    margin-right: 7px;
+}
+
+.br {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.2em 0.33em;
+    margin-left: 30rem;
+    margin-top: 30rem;
+}
+
+.trashcan {
+    width: 15px;
+    height: 13px;
+    
+}
+
+/* popup and hide */
+/* .plusbutt {
+    width: 400px;
+    position: relative;
+} */
+/* styling the button
+button.plusbuttbutton {
+    position: absolute;
+    height: 100%;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    transition: all 0.5s cubic-bezier(.87, -.41, .19, 1.44);
+} */
+/* shifts the button to the right on click*/
+/* button.active.plusbuttbutton {
+    transform: translateX(260px);
+  }
+
+  .webflowinput {
+    position: absolute;
+    width: 0%;
+    transition: all 0.5s cubic-bezier(.87, -.41, .19, 1.44);
+  }
+  
+  .active.webflowinput  {
+    width: 100%;
+
+  } */
+
+
+@media only screen and (max-width:1000px) {
+    .note {
+        background: #fff;
+        border-radius: 7px;
+        box-shadow: 0 2px 5px #ccc;
+        padding: 10px 10px 10px 0;
+        width: 40vw;
+        margin: 16px;
+        display: flex;
+        position: relative;
+        flex-direction: inline;
+        border-left: 5px solid;
+        border-image: 
+        linear-gradient(to bottom, #729dd6, #bc74d8) 1 100%;
+    }
+
+    .createform {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width:1550px) {
+    .note {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width:830px) {
+    .note {
+        width: 50vw;
+    }
+
+    .createform {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .note {
+        width: 90vw;
+    }
+
+    .createform {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    
+}
